@@ -5,7 +5,7 @@
 # arr.append(7)
 # print(arr)
 
-array asking from user
+#array asking from user
 
 n=int(input("Enter the size of array: "))
 arr=[]
