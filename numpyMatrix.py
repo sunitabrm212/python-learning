@@ -4,6 +4,9 @@ arr=array([
            [1,2,3],
            [4,5,6]
 ])
+
+print(len(arr)) #no. of rows in matrix
+print(len(arr[0])) #no. of cols in matrix
 print(arr.dtype) #checks the type
 print(arr.ndim) #dimension
 print(arr.shape) #shows rows and column
