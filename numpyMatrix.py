@@ -31,7 +31,7 @@ arr3=array([
     [9,7,6,8]
 ])
 m=matrix(arr3)
-print(m)
+print(m.dtype)
 
 #another way of converting into matrix as input
 #inserting into inverted colon and separated by semi-colon which indicates 2 row 3 col
