@@ -78,17 +78,42 @@
 # print(int(s1.avg()))
 
 #Class method
-class Student:
-    school='Telusko'
+# class Student:
+#     school='Telusko'
 
-    @classmethod
-    def info(cls):
-        return cls.school
+#     @classmethod
+#     def info(cls):
+#         return cls.school
     
-    @staticmethod
-    def info1():
-        print("This is a static method.")
+#     @staticmethod
+#     def info1():
+#         print("This is a static method.")
 
-s1=Student()
-print(Student.info())
-Student.info1()
+# s1=Student()
+# print(Student.info())
+# Student.info1()
+
+class Student:
+    def __init__(self,name,rollno):
+        self.name=name
+        self.rollno=rollno
+        self.lap=self.Laptop() #creating an object of inner class inside outer class
+    def show(self):
+        print(self.name,self.rollno)
+        self.lap.show()
+
+    class Laptop:
+        def __init__(self):
+            self.brand='Acer'
+            self.cpu='i7'
+            self.ram=16
+        def show(self):
+            print(self.brand,self.cpu,self.ram)
+
+s1=Student('Asika',1)
+s2=Student('Akash',2)
+s1.show()
+s2.show()
+#lap1=Student.Laptop() #creating an object of inner class outside outer class
+# print(s1.lap.brand)
+
